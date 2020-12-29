@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzamatic - order your pizza</title>
+  </head>
+  <body></body>
+  <header>
+    <h1>Order Your Pizza</h1>
+  </header>
+  <main>
+    <form action="./order.html" method="POST">
+      <section>
+        <label for="pizza_name">Name Your Pizza:</label><br />
+        <input id="pizza_name" text="text" />
+      </section>
+      <section>
+        <label for="pizza_base">Select Your Base</label><br/>
+        <select id="pizza_base">
+          <option value="standart">Standart</option>
+          <option value="thin">Thin Crust</option>
+          <option value="stuffed">Stuffed</option>
+        </select>
+      </section>
+      <br>
+      <section>
+        <label for="pizza_base_souce">Select Base Souce</label><br/>
+        <input id="pizza_base_souce"type="text" list="pizza_souce_list">
+        <datalist id="pizza_souce_list">
+          <option value="tomato souce"></option>
+          <option value="BBQ souce"></option>
+          <option value="Hot BBQ Sauce"></option>
+        </datalist>
+      </section>
+      <br>
+      <section>
+        <label for="pizza_size">Select Size:</label></br>
+        <span>Small</span>
+        <input type="range"min="1"max="4"step="1">
+        <span>Ekstra Large</span>
+      </section>
+      <br>
+      <section>
+          <label for="">Select Toppings</label><br>
+          <input id="mushroom" type="checkbox"value="mushroom">
+          <label for="mushroom">Mushroom</label>
+          <br>
+          <input id="olive" type="checkbox"value="olive">
+          <label for="olive">Olive</label>
+          <br>
+          <input id="pepper" type="checkbox"value="pepper">
+          <label for="pepper">Pepper</label>
+          <br>
+          <input id="onion" type="checkbox"value="onion">
+          <label for="onion">Onion</label>
+      </section>
+      <br>
+      <section>
+          <label for="">Would You Like Extra Chesee</label><br>
+          <input id="extra_chesee" type="radio"name="extra_chesee"value="yes">
+          <label for="extra chesee">Yes</label>
+          <input id="no extra_chesee" type="radio"name="extra_chesee"value="no">
+          <label for="no extra chesee">No</label>
+      </section>
+      <br>
+      <button>submit</button>
+    </form>
+  </main>
+  <hr/>
+  <footer>&copy;2020 pizza</footer>
+</html>
